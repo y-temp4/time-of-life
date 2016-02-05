@@ -49,7 +49,7 @@ function calcurate() {
       // JavaScriptの読み込みに失敗？したため
       // URLパラメータを用いてツイートする実装に変更
       + '<a href="https://twitter.com/intent/tweet'
-      + '?url=' + encodeURIComponent('https://y-temp4.github.io/time-of-life')
+      + '?url=' + encodeURIComponent('https://y-temp4.github.io/time-of-life/')
       + '&text=' + encodeURIComponent('体感時間だと、私の人生は残り')
       + rest_ratio
       + encodeURIComponent('％です。')
