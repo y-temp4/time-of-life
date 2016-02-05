@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Time of Life | あなたの人生の体感時間</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="h1 title">
+        Time of Life
+      </h1>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="notice">
+      <p>
+        「寿命を80歳とすると、40歳で折り返しか〜」...
+      </p>
+      <p>
+        あなたはそう思っていませんか？
+      </p>
+      <p>
+        <span class="accent">ジャネーの法則</span>によると、時間の感じ方は歳を取るほど早くなるそうです。
+      </p>
+      <p>
+        あなたに残された人生の残り時間は「<span class="bold">体感時間</span>」でどれくらいでしょうか？
+      </p>
+    </div>
+    <form class="form">
+      <p>
+        寿命を
+          <input type="number" min="50" max="130" step="1" value="80" class="lifespan" required >
+        歳と仮定したときの、あなたの残り人生の体感時間は...
+      </p>
+      <p>
+        あなたの年齢：
+          <input type="number" min="3"  max="130" step="1" class="age" required autofocus >
+        歳
+      </p>
+      <input type="submit" value="結果を見る" class="submit">
+    </form>
+    <div class="result"></div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <small class="copyright">© Time of Life</small> / <a href="https://twitter.com/y_temp4" target="_blank">お問い合わせ</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

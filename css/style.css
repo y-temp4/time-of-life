@@ -1,0 +1,153 @@
+@charset 'utf-8';
+
+@import url(https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy);
+
+/* ----- global ----- */
+
+html {
+  font-size: 10px;
+  line-height: 1.5;
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, meiryo, sans-serif;
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  margin-bottom: 6rem;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+input {
+  font-size: 1.6rem;
+  padding: .3rem;
+}
+
+/* ----- utility ------ */
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0px auto;
+}
+
+.h1 {
+  font-size: 2.4rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.accent {
+  color: #FF4081;
+}
+
+/* ----- header ----- */
+
+.title {
+  color: #fff;
+  margin-left: 2rem;
+  font-family: 'Sorts Mill Goudy', serif;
+}
+
+.header {
+  width: 100%;
+  padding: 1.2rem 1rem .7rem;
+  margin: 0 0 2rem 0;
+  background: #303F9F;
+}
+
+/* ----- main ----- */
+
+.notice {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  background: #fff;
+  border: 1px #B6B6B6 solid;
+  box-shadow: 0 2px 3px 0 #727272;
+}
+
+.form {
+  width: 90%;
+  margin: 0 auto 2rem;
+}
+
+.submit {
+  padding: 1.5rem 3rem;
+  font-size: 1.6rem;
+  background: #303F9F;
+  color: #fff;
+  border-style: none;
+  cursor: pointer;
+}
+
+.submit:hover {
+  opacity: 0.7;
+}
+
+.result {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.progress-bar {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 90%;
+  height: 3rem;
+  border: 1px solid #303F9F;
+  display: block;
+  margin: 0 auto 4rem;
+}
+
+.progress-bar::-webkit-progress-bar {
+  background: #fff;
+}
+
+.progress-bar::-webkit-progress-value {
+  background: #303F9F;
+}
+
+.twitter-button {
+  width: 20rem;
+  height: 5rem;
+  background: #00aced;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  line-height: 3.3;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0 auto;
+}
+
+.twitter-button:hover {
+  opacity: 0.7;
+}
+
+/* ----- footer ----- */
+
+.footer {
+  height: 6rem;
+  line-height: 6;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.footer .copyright {
+  font-size: 1.3rem;
+  color: #FF4081;
+  font-family: 'Sorts Mill Goudy', serif;
+  text-align: center;
+}
+
+.footer-content {
+  display: block;
+  text-align: center;
+}
