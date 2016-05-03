@@ -1,15 +1,15 @@
-var $ = function( className ) {
-  return document.getElementsByClassName( className );
+function $ (selector) {
+  return document.querySelector(selector);
 }
 
 function calcurate() {
   var
     // 寿命（デフォルトで80歳、50~130歳で変動可能）
-    lifespan = $('lifespan')[0].value - 0,
+    lifespan = $('.lifespan').value - 0,
     // ユーザーの年齢（3~130歳で変動可能）
-    age = $('age')[0].value - 0,
+    age = $('.age').value - 0,
     // 結果を格納して表示するためのDOM
-    result = $('result')[0],
+    result = $('.result'),
     // 体感時間での年齢
     feeling_age = Math.round( Math.log( age ) * 100 ),
     // 体感時間での年齢を寿命まで合計したもの
@@ -57,9 +57,9 @@ function calcurate() {
       + '&related=y_temp4" class="twitter-button">'
       + '結果をツイートする</a>';
 
-  progress_bar = $('progress-bar')[0];
-  ratio_box = $('ratio')[0];
-  rest_ratio_box = $('rest-ratio')[0];
+  progress_bar = $('.progress-bar');
+  ratio_box = $('.ratio');
+  rest_ratio_box = $('.rest-ratio');
 
   loading = function() {
     progress_bar.value += 1;
@@ -81,7 +81,7 @@ function calcurate() {
 }
 
 function init() {
-  $('form')[0].onsubmit = calcurate;
+  $('.form').onsubmit = calcurate;
 }
 // window.onloadよりは新しい方法らしい
 document.addEventListener( 'DOMContentLoaded', init, false );
