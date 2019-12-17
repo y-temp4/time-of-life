@@ -54,6 +54,7 @@ function calcurate() {
       + rest_ratio
       + encodeURIComponent('％です。')
       + '&hashtags=timeoflife'
+      + '&via=y_temp4"'
       + '&related=y_temp4" class="twitter-button">'
       + '結果をツイートする</a>';
 
